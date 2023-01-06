@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css"
 const inter = Inter({ subsets: ["latin"] })
 
 const test = "te"
+const othertest = "husky"
 
 export default function Home() {
   return (
