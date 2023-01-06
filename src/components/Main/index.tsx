@@ -1,6 +1,7 @@
 export default function Main() {
   const test = ""
   const test2 = ""
+  const test2 = "duvido pasa"
 
   return (
     <main>
