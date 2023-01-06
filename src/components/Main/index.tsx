@@ -1,5 +1,6 @@
 export default function Main() {
   const test = ""
+  const test2 = ""
 
   return (
     <main>
