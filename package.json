@@ -1,43 +1,47 @@
 {
-  "name": "boilerplate",
+  "name": "template-next-ts",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --max-warnings=0",
-    "prepare": "husky install",
-    "test": "jest",
-    "test:watch": "yarn test --watch"
+    "lint": "eslint . --fix --max-warnings=0",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "@next/font": "13.1.1",
+    "@next/font": "^13.1.1",
+    "axios": "^1.2.1",
+    "next": "13.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.2.4",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
-    "eslint": "^8.31.0",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "8.30.0",
     "eslint-config-next": "13.1.1",
-    "jest-environment-jsdom": "^29.3.1",
-    "next": "13.1.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "4.9.4"
-  },
-  "devDependencies": {
-    "@babel/preset-typescript": "^7.18.6",
-    "@types/jest": "^29.2.5",
-    "@typescript-eslint/eslint-plugin": "^5.48.0",
-    "@typescript-eslint/parser": "^5.48.0",
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.2",
     "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
     "lint-staged": "^13.1.0",
-    "prettier": "2.8.1"
+    "prettier": "^2.8.1",
+    "typescript": "4.9.4"
   }
 }
