@@ -5,6 +5,10 @@ import Main from ".";
 export default {
     title: "Main",
     component: Main,
+    args: {
+        title: "Title",
+        description: "Description",
+    },
 } as Meta;
 
-export const Basic: Story = () => <Main />;
+export const Basic: Story = args => <Main {...args} />;
