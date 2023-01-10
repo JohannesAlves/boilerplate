@@ -12,7 +12,7 @@
         "test:coverage": "jest --coverage",
         "prepare": "husky install",
         "storybook": "start-storybook -s ./public -p 6006",
-        "build-storybook": "build-storybook"
+        "build-storybook": "build-storybook -s ./public"
     },
     "dependencies": {
         "@next/font": "^13.1.1",
